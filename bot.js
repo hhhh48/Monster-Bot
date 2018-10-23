@@ -28,7 +28,7 @@ client.user.setGame(`Bot`,"")
   console.log('')
 });
 client.on("message", message => {
- if (message.content === "-help") {
+ if (message.content === "$$help") {
   const embed = new Discord.RichEmbed()
       .setColor("RANDOM")
       .setFooter('© Premium Bot:heart: جميع الحقوق محفوظة 2017 لــبوت')
