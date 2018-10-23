@@ -27,9 +27,6 @@ client.user.setGame(`Bot`,"")
   console.log('')
   console.log('')
 });
-const Discord = require('discord.js');
-const client = new Discord.Client();
-
 // On déclare le préfixe
 var prefix = '$$';
 
