@@ -54,13 +54,6 @@ client.on('message', message => {
 ❖!زواج لعبة زواج
 ❖!ابلع  لعبة حلوه
 
-
-
-
-`);
-
-message.channel.send('**تم الارسال في الخاص**');
-
     }
 });
 client.login(process.env.BOT_TOKEN);
