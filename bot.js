@@ -27,20 +27,40 @@ client.user.setGame(`$$Help`,"http://twitch.tv/S-F")
   console.log('')
   console.log('')
 });
-client.on("message", message => {
-    if(message.content.startsWith(prefix $$ "server")) {
-        if(!message.member.hasPermission("MANAGE_GUILD")) return message.channel.send("**ليس لديك البرمشن المطلوب لاستخدام هذا الامر ❌**");
-        const embed = new Discord.RichEmbed()
-        .setAuthor(message.guild.name, message.guild.iconURL)
-        .setColor("RANDOM")
+client.on('message', message => {
+    if (message.author.bot) return;
+     if (message.content === prefix $$ "help") {
 
-.addField('**عدد اعضاء السيرفر 👤 **' , `${message.guild.memberCount}`)
-.addField('**اونر السيرفر 👑**' , `${message.guild.owner.user.username}`)
-.addField(`**الرومات :scroll: **`,true)
-.addField(`# الكتابية`, `${message.guild.channels.filter(m => m.type === 'text').size}`)
-.addField( `:loud_sound: الصوتية`,`${message.guild.channels.filter(m => m.type === 'voice').size}`)
-.addField(`**عدد الرتب**:briefcase:`,`${message.guild.roles.size}`)
-        message.channel.send({embed:embed})
+
+ message.author.sendMessage(`
+ 
+
+ ╱╭╮╭╮╱╱╱╱╭╮╭━╮╱╱╱╱╱╱╭━━╮╱╱╱
+♕ ♕ ♕ ♕ ♕ ♕ ♕ ♕ ♕ ♕ ♕ ♕ ♕ ♕ ♕ ♕ ♕ ♕ ♕ ♕ 
+اوامر البوت
+❖اوامر عامه
+
+❖!link  لاخذ رابط اي بوت 
+❖!رابط لاخذ رابط السيرفر
+❖!invites لمعرفة كم دعوت شخص
+❖ !server  لمعرفت معلومات السيرفر
+❖!bans  يعطيك تاقات الي تبندو ورا بعض 
+❖!owner لترسل رسالة لصاحب البوت
+❖!مسح لمسح الشات 
+❖!اقتراح وكتب اقتراحك وسوف يصل الاداره
+❖!move لسحب جميع الاعضاء الذين في الرومات لعندك
+❖❖❖❖❖❖❖❖❖❖❖❖❖❖❖❖❖❖❖❖❖
+❖اوامر العاب 
+❖!زواج لعبة زواج
+❖!ابلع  لعبة حلوه
+
+
+
+
+`);
+
+message.channel.send('**تم الارسال في الخاص**');
+
     }
 });
 client.login(process.env.BOT_TOKEN);
