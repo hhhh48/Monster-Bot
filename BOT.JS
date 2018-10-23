@@ -1,37 +1,38 @@
-const Discord = require('discord.js');
-const client = new Discord.Client();
-const prefix = '$$'
+test: heroku-18 heroku-16 cedar-14
 
-client.on('ready', () => {
-  console.log(`Logged in as ${client.user.tag}!`);
-  client.user.setGame(`Monster Bot`,"")
-  console.log('')
-  console.log('')
-  console.log('+[-----------------------------------------------------------------]+')
-  console.log(`[Start] ${new Date()}`);
-  console.log('+[-----------------------------------------------------------------]+')
-  console.log('')
-  console.log('+[------------------------------------]+');
-  console.log(`Logged in as * [ " ${client.user.username} " ]`);
-  console.log('')
-  console.log('Informations :')
-  console.log('')
-  console.log(`servers! [ " ${client.guilds.size} " ]`);
-  console.log(`Users! [ " ${client.users.size} " ]`);
-  console.log(`channels! [ " ${client.channels.size} " ]`);
-  console.log('+[------------------------------------]+')
-  console.log('')
-  console.log('+[------------]+')
-  console.log(' Bot Is Online')
-  console.log('+[------------]+')
-  console.log('')
-  console.log('')
-});
+heroku-18:
+	@echo "Running tests in docker (heroku-18)..."
+	@docker run -v $(shell pwd):/buildpack:ro --rm -it -e "STACK=heroku-18" heroku/heroku:18 bash -c 'cp -r /buildpack /buildpack_test; cd /buildpack_test/; test/run;'
+	@echo ""
 
+heroku-16:
+	@echo "Running tests in docker (heroku-16)..."
+	@docker run -v $(shell pwd):/buildpack:ro --rm -it -e "STACK=heroku-16" heroku/heroku:16 bash -c 'cp -r /buildpack /buildpack_test; cd /buildpack_test/; test/run;'
+	@echo ""
 
+cedar-14:
+	@echo "Running tests in docker (cedar-14)..."
+	@docker run -v $(shell pwd):/buildpack:ro --rm -it -e "STACK=cedar-14" heroku/cedar:14 bash -c 'cp -r /buildpack /buildpack_test; cd /buildpack_test/; test/run;'
+	@echo ""
 
+hatchet:
+	@echo "Running hatchet integration tests..."
+	@bash etc/ci-setup.sh
+	@bash etc/hatchet.sh spec/ci/
+	@echo ""
 
+nodebin-test:
+	@echo "Running test for Node v${TEST_NODE_VERSION}..."
+	@bash etc/ci-setup.sh
+	@bash etc/hatchet.sh spec/nodebin/
+	@echo ""
 
+unit:
+	@echo "Running unit tests in docker (heroku-18)..."
+	@docker run -v $(shell pwd):/buildpack:ro --rm -it -e "STACK=heroku-18" heroku/heroku:18 bash -c 'cp -r /buildpack /buildpack_test; cd /buildpack_test/; test/unit;'
+	@echo ""
 
-
-client.login('NDk4NjUxNTAwMTQ3NTA3MjMw.Dq_tdg.i8_6BO3TeFegtpiM9ljw34BFmm0');
+shell:
+	@echo "Opening heroku-16 shell..."
+	@docker run -v $(shell pwd):/buildpack:ro --rm -it heroku/heroku:16 bash -c 'cp -r /buildpack /buildpack_test; cd /buildpack_test/; bash'
+	@echo ""
