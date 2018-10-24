@@ -770,7 +770,7 @@ client.on('message', message => {
 client.on('message', message => {
   if (true) {
 if (message.content === '$$invite') {
-      message.author.send(' رابط البوت |  https://discordapp.com/oauth2/authorize?client_id=378398305153187840&scope=bot&permissions=2146958591 ').catch(e => console.log(e.stack));
+      message.author.send(' رابط البوت |  https://discordapp.com/oauth2/authorize?client_id=498651500147507230&scope=bot&permissions=8&scope=bot ').catch(e => console.log(e.stack));
 
     }
    } 
