@@ -12,7 +12,7 @@ client.on('message', msg => {
 });
 
 client.on('ready',  () => {
-  console.log('By : حسوني العراقي ');
+  console.log('By : Monster flame ');
   console.log(`Logged in as * [ " ${client.user.username} " ] servers! [ " ${client.guilds.size} " ]`);
   console.log(`Logged in as * [ " ${client.user.username} " ] Users! [ " ${client.users.size} " ]`);
   console.log(`Logged in as * [ " ${client.user.username} " ] channels! [ " ${client.channels.size} " ]`);
@@ -27,15 +27,15 @@ client.on("message", message => {
    message.react("😜")
   const embed = new Discord.RichEmbed()
       .setColor("RANDOM")
-      .addField("『Diamond Bot』 『اسم البوت』", true)
+      .addField("『Diamond Bot』 『Monster Bot』", true)
       
-      .addField("『@حـ♥̨̥̬̩سوني آإلعرآإقـ♥̨̥̬̩ي#7725』『مصمم البوت』", true)
+      .addField("", true)
       
-      .addField("『^help^』😘『اذا تبي جميع الاوامر مع اوامر اضافية』😵", true)
+      .addField("『$$help』😘『اذا تبي جميع الاوامر مع اوامر اضافية』😵", true)
       
-	    .addField("『^help$$』👻『اذا تبي الاوامر العامة』😳", true)
+	    .addField("『$$help』👻『اذا تبي الاوامر العامة』😳", true)
 	    
-      .addField("『^help$$^』😮『اذا تبي  الاوامر الادارية』🤒", true)
+      .addField("『$$help』😮『اذا تبي  الاوامر الادارية』🤒", true)
       
       .addField("『🤑』『قريبا سوف نضيف المزيد و المزيد من الاوامر 』『😉』", true)
       
@@ -72,148 +72,10 @@ client.on('message', message => {
 });
 
 
-console.log('mariam ra7t tmot al nas');
-client.on('ready', () => {
-  console.log(`im redey`);
-});
-const zead = [
-   '*** انا اسمي مريم ***',
-   '*** مرحباَ ماهو اسمك ؟ ***',
-   `*** اهلا بك ! انا تائهه في هذا المكان  ***`,
-   '*** هل تود مساعدتي ؟ ***',
-   '*** لماذا هل انت قاسي القلب ؟ ***',
-   '*** انني اشفق عليك عليك يجب ان تطهر روحك وتحب الخير للجميع ***',
-   '*** ابتعد عني قليل انني متعبة ***',
-   '*** هل انت نادم على ماقلت ؟ ***',
-   '*** ابتعد عني قليل انني متعبة ***',
-   '*** هل انت نادم على ماقلت ؟ ***',
-   '*** هل تود مساعدتي ؟ ***',
-   '*** واو اشكرك انك شخصاَ رائع ! ***',
-   '*** ابحث معي عن منزلي لقد كان قريباَ من هنا ***',
-   '*** ولاكن عندما حل الليل لم اعد ارى اي شيء ***',
-   '*** مذا تظن اين يوجد ؟ يمين او يسار ***',
-   '*** هيا اذاَ ***',
-   '*** اود ان اسئلك سؤال ونحن في الطريق ***',
-   '*** هل تراني فتاة لطيفة ام مخيفة ***',
-   '*** اشكرك !  ***',
-   '*** لقد وصلنا الى المنزل شكراَ جزيلَ انتطرني ثواني وسوف اعود ***',
-   '*** هل انت جاهز ؟ ***',
-   '*** لقد اخبرت والدي عنك وهم متحمسين لرؤيتك ***',
-   '*** هل تود ان تراهم الان ***',
-'*** انا لست الحوت الازرق كما يدعون ***',
-   '*** انا لست كاذبة صدقني***',
-   '*** لماذا ارى في عينيك الخوف ؟ ***',
-   '*** انا مجرد فتاة لطيفة تحب اللعب مع الجميع ***',
-   '*** اعرف كل شيء يحدث اسمع ذالك بالراديو ***',
-   '*** سمعت ان البشر يقتلون من اجل المال فقط ***',
-   '*** لماذا لم تدخل الغرفة ؟ ***',
-   '*** ههههههههههههههههههه انت الان مسجون في هذه الغرفة ***',
-   '*** لن تخرج حتى اعود لك بعد قليل ***',
-   '*** المفتاح معك ! اكتب .مريم  ***',
-   '*** مفتاح احمر , هل حصلت عليه ؟ ***',
-   '*** ان لم تحصل عليه , اكتب .مريم مرة اخرى ***',
-   '*** مفتاح اسود . هل حصلت عليه ؟ ***',
-   '*** اين تريد ان تختبئ بسرعة قبل ان تعود ***',
-   '*** لقد عادت من جديد الى المنزل ***',
-   '*** لا تصدر اي صوت ! ***',
-   '*** مريم : لقد عدت ***',
-   '*** مريم : يا ايها المخادع اين انت ***',
-   '*** مريم : اعلم انك هنا في المنزل ***',
-   '*** مريم : ماذا تريد ان تسمع ***',
-   '*** مريم : اضغط على الرابط اهداء مني لك | https://www.youtube.com/watch?v=hvSiuQccmtg ***',
-   '*** احد ما خرج من المنزل ***',
-   '*** انتظر الجزء الثاني عندما يوصل البوت 100 سيرفر , ساعدنا في نشر البوت وادخل هذا السيرفر  ***'
-]
- client.on('message', message => {
- if (message.content.startsWith('$$مريم')) {
-  var mariam= new Discord.RichEmbed()
-  .setTitle("لعبة مريم ..")
-  .setColor('RANDOM')
-  .setDescription(`${zead[Math.floor(Math.random() * zead.length)]}`)
-  .setImage("https://www.npa-ar.com/wp-content/uploads/2017/08/%D9%84%D8%B9%D8%A8%D8%A9-%D9%85%D8%B1%D9%8A%D9%85-300x200.jpg")
-   message.channel.sendEmbed(mariam);
-   message.react("??")
-  }
-});
-
-
-
- const cuttweet = [
-     'كت تويت ‏| تخيّل لو أنك سترسم شيء وحيد فيصبح حقيقة، ماذا سترسم؟',
-     'كت تويت | أكثر شيء يُسكِت الطفل برأيك؟',
-     'كت تويت | الحرية لـ ... ؟',
-     'كت تويت | قناة الكرتون المفضلة في طفولتك؟',
-     'كت تويت ‏| كلمة للصُداع؟',
-     'كت تويت ‏| ما الشيء الذي يُفارقك؟',
-     'كت تويت | موقف مميز فعلته مع شخص ولا يزال يذكره لك؟',
-     'كت تويت ‏| أيهما ينتصر، الكبرياء أم الحب؟',
-     'كت تويت | بعد ١٠ سنين ايش بتكون ؟',
-     'كت تويت ‏| مِن أغرب وأجمل الأسماء التي مرت عليك؟',
-     '‏كت تويت | عمرك شلت مصيبة عن شخص برغبتك ؟',
-     'كت تويت | أكثر سؤال وجِّه إليك مؤخرًا؟',
-     '‏كت تويت | ما هو الشيء الذي يجعلك تشعر بالخوف؟',
-     '‏كت تويت | وش يفسد الصداقة؟',
-     '‏كت تويت | شخص لاترفض له طلبا ؟',
-     '‏كت تويت | كم مره خسرت شخص تحبه؟.',
-     '‏كت تويت | كيف تتعامل مع الاشخاص السلبيين ؟',
-     '‏كت تويت | كلمة تشعر بالخجل اذا قيلت لك؟',
-     '‏كت تويت | جسمك اكبر من عٌمرك او العكسّ ؟!',
-     '‏كت تويت |أقوى كذبة مشت عليك ؟',
-     '‏كت تويت | تتأثر بدموع شخص يبكي قدامك قبل تعرف السبب ؟',
-     'كت تويت | هل حدث وضحيت من أجل شخصٍ أحببت؟',
-     '‏كت تويت | أكثر تطبيق تستخدمه مؤخرًا؟',
-     '‏كت تويت | ‏اكثر شي يرضيك اذا زعلت بدون تفكير ؟',
-     '‏كت تويت | وش محتاج عشان تكون مبسوط ؟',
-     '‏كت تويت | مطلبك الوحيد الحين ؟',
-     '‏كت تويت | هل حدث وشعرت بأنك ارتكبت أحد الذنوب أثناء الصيام؟',
-]
-
- client.on('message', message => {
-   if (message.content.startsWith("$$كت تويت")) {
-                if(!message.channel.guild) return message.reply('** This command only for servers**');
-  var embed = new Discord.RichEmbed()
-  .setColor('RANDOM')
-   .setThumbnail(message.author.avatarURL) 
- .addField('لعبه كت تويت' ,
-  `${cuttweet[Math.floor(Math.random() * cuttweet.length)]}`)
-  message.channel.sendEmbed(embed);
-  console.log('[id] Send By: ' + message.author.username)
-    }
-});
-
-const secreT = [
-  "**الحياة بكل ما فيها تقف دائمًا على حد الوسطية بين اتزان المعنى وضده من حب وكره وحق وباطل وعدل وظلم**.",
-  "**كى تعيش عليك ان تتقن فن التجاهل باحتراف**.",
-  "**لا تحزن على من اشعرك بان طيبتك غباء امام وقاحته**.",
-  "**هناك من يحلم بالنجاح وهناك من يستيقظ باكرا لتحقيقه**.",
-  "**ان تعالج ألمك بنفسك تلك هى القوة**.", 
-  "**الجميع يسمع ما تقول والاصدقاء ينصتون لما تقول وافضل الاصدقاء ينصتون لما اخفاه سكوتك**.", 
-  "**انتهى زمن الفروسية ، لم تنقرض الخيول بل انقرض الفرسان**.", 
-  "**ان تكون اخرسا عاقلا خير من ان تكون نطوقا جهولا**.", 
-  "**المناقشات العقيمة لا تنجب افكارا**.", 
-  "**نحن نكتب ما لا نستطيع ان نقول وما نريد ان يكون**.", 
-  "**نحن نكتب ما لا نستطيع ان نقول وما نريد ان يكون**.", 
-]
-
-
- client.on('message', message => {
-   if (message.content.startsWith("$$خواطر")) {
-                if(!message.channel.guild) return message.reply('** This command only for servers**');
-  var embed = new Discord.RichEmbed()
-  .setColor('RANDOM')
-
-   .setThumbnail(message.author.avatarURL) 
- .addField('لعبه خواطر' ,
-  `${secreT[Math.floor(Math.random() * secreT.length)]}`)
-  message.channel.sendEmbed(embed);
-  console.log('[id] Send By: ' + message.author.username)
-    }
-});
-
 
 
 client.on("message", message => {
- if (message.content === "^help^") {
+ if (message.content === "$$help") {
         message.react("😘")
            message.react("😵")
   const embed = new Discord.RichEmbed() 
@@ -284,12 +146,6 @@ client.on("message", message => {
 
 🎮『العاب』🎮
 
-🎮$$كت تويت
-
-🎮$$مريم 
-
-🎮$$خواطر 
-
 ● ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ ● 
 
 🎴『اوامر الصور』🎴
@@ -320,9 +176,7 @@ client.on("message", message => {
 
 $$invite | القسم الاول لي اضافه البوت 
 
-$$support| القسم الثاني  الدعم الفني و المساعدة
-
-القسم الثالث مصمم البوت | @حـ♥̨̥̬̩سوني آإلعرآإقـ♥̨̥̬̩ي#7725 
+$$support| القسم الثاني  الدعم الفني و المساعدة 
 
 ● ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ ● 
 
@@ -340,7 +194,7 @@ message.author.sendEmbed(embed)
 
 
 client.on("message", message => {
- if (message.content === "^help$$^") {
+ if (message.content === "$$help") {
         message.react("😮")
                 message.react("🤒")
   const embed = new Discord.RichEmbed() 
@@ -381,9 +235,6 @@ $$invite | القسم الاول لي اضافه البوت
 
 $$support| القسم الثاني  الدعم الفني و المساعدة
 
-القسم الثالث مصمم البوت | @حـ♥̨̥̬̩سوني آإلعرآإقـ♥̨̥̬̩ي#7725 
-
-
 
 
 
@@ -399,7 +250,7 @@ message.author.sendEmbed(embed)
 
 
 client.on("message", message => {
- if (message.content === "^help$$") {
+ if (message.content === "$$help") {
         message.react("😳")
                 message.react("👻")
   const embed = new Discord.RichEmbed() 
@@ -439,9 +290,6 @@ client.on("message", message => {
 $$invite | القسم الاول لي اضافه البوت 
 
 $$support| القسم الثاني  الدعم الفني و المساعدة
-
-القسم الثالث مصمم البوت | @حـ♥̨̥̬̩سوني آإلعرآإقـ♥̨̥̬̩ي#7725 
-
 
 `)
 
@@ -605,17 +453,7 @@ client.on('message', message => {
     }
 });
 
-  var prefix = "$$";
-var cats = ["https://i.ytimg.com/vi/SfLV8hD7zX4/maxresdefault.jpg","http://www.dogbazar.org/wp-content/uploads/2014/09/british-bull-dog-puppies.jpg","http://cdn2-www.dogtime.com/assets/uploads/gallery/german-shepherd-dog-breed-pictures/standing-7.jpg","http://cdn.akc.org/Marketplace/Breeds/German_Shepherd_Dog_SERP.jpg","https://animalso.com/wp-content/uploads/2016/12/black-german-shepherd_2.jpg","https://static.pexels.com/photos/104827/cat-pet-animal-domestic-104827.jpg","https://www.petfinder.com/wp-content/uploads/2012/11/101438745-cat-conjunctivitis-causes.jpg","http://www.i-love-cats.com/images/2015/04/12/cat-wallpaper-38.jpg","https://www.aspca.org/sites/default/files/cat-care_urine-marking_main-image.jpg","https://s-media-cache-ak0.pinimg.com/originals/f0/3b/76/f03b7614dfadbbe4c2e8f88b69d12e04.jpg","http://www.rd.com/wp-content/uploads/sites/2/2016/04/15-cat-wants-to-tell-you-attention.jpg","https://www.thelocal.de/userdata/images/article/fa6fd5014ccbd8f4392f716473ab6ff354f871505d9128820bbb0461cce1d645.jpg","https://www.adelaidezoo.com.au/wp-content/uploads/sites/2/animals/GiantPanda3Slider.jpg","http://imagem.band.com.br/f_230168.jpg"]
-    client.on('message', message => {
-        var args = message.content.split(" ").slice(1);
-    if(message.content.startsWith(prefix + 'animal')) {
-         var cat = new Discord.RichEmbed()
-.setImage(cats[Math.floor(Math.random() * cats.length)])
-message.channel.sendEmbed(cat);
-    }
-});
-
+  
 client.on('message', message => {
 var prefix = "$$";
 
@@ -812,7 +650,7 @@ client.on("message", message => {
 client.on('message', message => {
   if (true) {
 if (message.content === '$$support') {
-      message.author.send(' |https://discord.gg/T4Q7vXP| لـ أي استفسار').catch(e => console.log(e.stack));
+      message.author.send(' |https://discord.gg/eGWyWX| لـ أي استفسار').catch(e => console.log(e.stack));
 
     }
    } 
@@ -837,7 +675,7 @@ client.on('message', message => {
 client.on('message', message => {
   if (true) {
 if (message.content === '$$invite') {
-      message.author.send(' رابط البوت |  https://discordapp.com/oauth2/authorize?client_id=378398305153187840&scope=bot&permissions=2146958591 ').catch(e => console.log(e.stack));
+      message.author.send(' رابط البوت |  https://discordapp.com/api/oauth2/authorize?client_id=498651500147507230&permissions=8&scope=bot ').catch(e => console.log(e.stack));
 
     }
    } 
@@ -862,7 +700,7 @@ client.on('message', message => {
             if(!message.channel.guild) return;
 let args = message.content.split(' ').slice(1).join(' ');
 if (message.content.startsWith('$$bc-users')){
- if(!message.author.id === 'اي دي صاحب البوت') return;
+ if(!message.author.id === '454022583709466625') return;
 message.channel.sendMessage('جار ارسال الرسالة |:white_check_mark:')
 client.users.forEach(m =>{
 m.sendMessage(args)
@@ -1019,31 +857,6 @@ client.on('message', message => {
 });
 
   
-client.on('message', message => {
- if (message.content.startsWith("ترحيب 5")) {
-                                 var mentionned = message.mentions.users.first();
-             var mentionavatar;
-               if(mentionned){
-                   var mentionavatar = mentionned;
-               } else {
-                   var mentionavatar = message.author;
-                   
-               }
-               let bot;
-               if(message.author.bot) {
-                   bot = 'Bot'
-               } else {
-                   bot = 'User'
-               } 
-  var EsTeKnAN = new Discord.RichEmbed()
-  .setColor('RANDOM')
-  .setThumbnail(`${mentionavatar.avatarURL}`)
-  .addField("***شكرا الانضمامك الينا***" ,mentionavatar.username )
-  .setDescription('***لو علمت الدار بمن زارها فرحت وأستبشرت ثم باست موضع القدمين وأنشدت بلسان الحال قائلة أهلاً وسهلاً بأهل الجود والكرم.***')
-  .setImage('https://www.askideas.com/media/13/Welcome-Sign-With-Flowers.jpg')
-   message.channel.sendEmbed(EsTeKnAN);
-  }
-});
 
   
 client.on('message', message => {
